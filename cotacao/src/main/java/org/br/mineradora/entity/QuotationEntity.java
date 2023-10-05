@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
-import java.sql.Date;
+import java.util.Date;
 
 @Table(name = "quotation")
 @Entity
@@ -28,4 +28,10 @@ public class QuotationEntity {
 
     private String pair;
 
+    public QuotationEntity(Date date, BigDecimal currencyPrice, String pctChange, String pair) {
+        this.date = date;
+        this.currencyPrice = currencyPrice;
+        this.pctChange = pctChange;
+        this.pair = pair;
+    }
 }
