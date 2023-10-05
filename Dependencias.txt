@@ -1,0 +1,4 @@
+Hibernate ORM with Panache
+JDBC Driver - PostgreSQL
+Apache Kafka Streams
+Lombok
